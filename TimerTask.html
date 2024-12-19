@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Task</title>
+    <style>
+        
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/sand-timer-background-hd-8k-wallpaper-stock-photographic-image_890746-110072.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+
+        }
+        h2{
+            color: white;
+        }
+        #maindiv{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 35vh;
+        }
+       .subdiv{
+        height: 100px ;
+        width: 100px;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td><h2>Select Format</h2></td>
+                <td><select name="hourformat" id="format">
+                        <option value="12-hours format">12-hours format</option>
+                        <option value="24-hours format">24-hours format</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <div id="maindiv">
+            <div id="subdiv1" class="subdiv">Year</div>
+            <div id="subdiv2" class="subdiv">Month</div>
+            <div id="subdiv3" class="subdiv">Date</div>
+            <div id="subdiv4" class="subdiv">Day</div>
+            <div id="subdiv5" class="subdiv">Hour</div>
+            <div id="subdiv6" class="subdiv">Minutes</div>
+            <div id="subdiv7" class="subdiv">Seconds</div>
+            <div id="subdiv8" class="subdiv">AM/PM</div>
+        </div>
+    </div>
+
+    <script src="../JavaScript/TimerTask.js"></script>
+</body>
+</html>
